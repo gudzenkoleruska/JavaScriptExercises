@@ -44,3 +44,5 @@ function canculator (a, b, operator){
 }
 console.log("Результат вычисления: " + canculator(5, 5, "/"));
 console.log("**********************************")
+
+//new comment to commit
