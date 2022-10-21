@@ -1,0 +1,94 @@
+//Hometask2
+//Make different types of coffee
+
+let size, coffe, price;
+let milk;
+let isReady;
+
+let latte = "Latte";
+let cappuccino = "Cappuccino";
+let espresso = "Espresso";
+const types = [latte, cappuccino, espresso ]
+
+let size_small_cup = "small";
+let size_medium_cup = "medium";
+let size_big_cup = "big";
+const sizes = [size_small_cup, size_medium_cup, size_big_cup]
+
+let price_small = 3;
+let price_medium = price_small*1.5;
+let price_big = price_small*3;
+
+let type_coffe = "instant coffee";
+let add_sugar = "Add sugar 1 small spoon";
+let no_added_sugar = "No sugar";
+
+let milk_latte = "Add milk 100 gr";
+let milk_cappuchino = "Add milk 50 gr";
+let milk_espresso = "No milk";
+
+const milk_added = [milk_latte, milk_cappuchino, milk_espresso]
+
+/* coffe = prompt("What is the coffe do you prefer?");
+size = prompt("What is the size of cup?") */
+
+// alert("You enter not exist coffe. Please try again!");
+
+coffe = cappuccino;
+size = size_medium_cup;
+isReady = true; 
+
+if (isReady == true) {
+  
+if (coffe == latte){
+  milk = milk_latte;
+  sugar = add_sugar;
+} 
+else if (coffe == cappuccino){
+  milk = milk_cappuchino;
+  sugar = add_sugar;
+} else{
+  milk = milk_espresso;
+  sugar = no_added_sugar;
+}
+
+//Recipe of coffee 
+let step1 = `1. The size of cup - ${size}`;
+let step2 = `2. The type of coffe - ${type_coffe}`;
+let step3 = "3. Warm up the water";
+let step4 = "4. Add the selected coffe to the cup"
+let step5 = "5. Add the hot water to the cup"
+let step6 = milk;
+let step7 = sugar; 
+let res = "Your coffe is ready!"
+
+console.log(`Recipe for coffe ${coffe} \n` +"\n" + step1 +"\n" + step2 + "\n" + step3 + "\n"+ step4 + "\n" +step5+ "\n" +"6. "+ step6+ "\n"+"7. "+step7+ "\n");
+
+
+if (size == size_small_cup){
+  price = price_small;
+  console.log(`${res} Total price is ${price}$.`);
+  }
+else if (size == size_medium_cup){
+  price = price_medium;
+  console.log(`${res} Total price is ${price}$.`);
+  }
+else {
+  price = price_big;
+  console.log(`${res} Total price is ${price}$.`);
+}
+} else if(isReady == false){
+ console.log("Please wait more 5 minutes");
+}
+else {
+console.log("Your order cannot be proceed");
+}
+
+
+
+
+
+
+
+
+
